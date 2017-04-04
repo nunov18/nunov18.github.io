@@ -1,0 +1,181 @@
+/* css responsive */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__menu {
+  display: none;
+}
+
+/* Css responsive Small Devices */
+
+@media screen and (max-width: 767px) {
+  hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .header__title {
+    margin-left: 0;
+    font-size: 22px;
+    line-height: 1.25em;
+    vertical-align: top;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    font-weight: bold;
+  }
+  .header__description {
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 1.25em;
+    vertical-align: bottom;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .header__menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 15px;
+    margin: 15px;
+  }
+  .header__logo{
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .header__menu svg {
+    width: 32px;
+    fill: #000000;
+  }
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+  }
+  .featuredwork__title{
+    font-size: 36px;
+    line-height: 1.25em;
+  }
+  .article__title{
+    font-size:28px;
+    line-height: 1.25em;
+    text-align: left;
+  }
+  .article__description{
+    font-size:24px;
+    line-height: 1.25em;
+  }
+  .article__content{
+    font-size:22px;
+    line-height: 1.25em;
+  }
+  .article__link{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.22em;
+    font-style: italic;
+  }
+  .footer{
+    font-size:14px;
+    line-height: 1.25em;
+  }
+  .modal-title{
+    font-size: 36px;
+    line-height: 1.25em;
+    text-align: center;
+  }
+  .modal-description{
+    font-size: 16px;
+    line-height: 1.25em;
+  }
+}
+
+/* Css responsive Small to Medium and Large Devices */
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+  hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .header__title {
+    font-size: 48px;
+    font-weight: 100;
+    line-height: 1.05em;
+    text-transform: uppercase;
+    text-align: right;
+  }
+  .header__description {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.375em;
+    text-transform: uppercase;
+    text-align: right;
+  }
+  .header__logo{
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .header__menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 15px;
+    margin: 15px;
+  }
+  .featuredwork__title{
+    font-size: 48px;
+    line-height: 1.25em;
+  }
+  .article__title{
+    font-size:36px;
+    line-height: 1.25em;
+  }
+  .article__description{
+    font-size:28px;
+    line-height: 1.25em;
+  }
+  .article__content{
+    font-size:24px;
+    line-height: 1.25em;
+  }
+  .footer{
+    font-size:14px;
+    line-height: 1.25em;
+  }
+  .modal-title{
+    font-size: 36px;
+    line-height: 1.25em;
+    text-align: center;
+  }
+  .modal-description{
+    font-size: 24px;
+    line-height: 1.25em;
+  }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Nuno Vieira</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <header class="row header">
+        <div class="col-xs-3 col-sm-3 header_logo">
+            <img class="header__logo" src="images/nv.svg" alt="Nuno Vieira Portfolio">
+        </div>
+        <div class="col-xs-8 col-sm-9">
+          <h1 class="header__title">Nuno Vieira</h1>
+          <p class="header__description">Front-end Developer</p>
+        </div>
+        <div class="col-xs-1 text-uppercase text-right">
+          <a id="menu" class="header__menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/></svg></a>
+        </div>
+      </header>
+      <section class="row"><div class="col-md-12"><hr></div></section>
+      <nav id="drawer" class="nav text-center">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#About">About</a></li>
+          <li class="nav__item"><a href="#Projects">Projects</a></li>
+          <li class="nav__item"><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <figure class="row figure">
+        <div class="col-sm-12">
+          <br>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img class="img-responsive" src="images/html.svg" alt="HTML">
+              </div>
+              <div class="item">
+                <img class="img-responsive" src="images/css3.svg" alt="CSS">
+              </div>
+              <div class="item">
+                <img class="img-responsive" src="images/js.svg" alt="JavaScript">
+              </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="icon-prev" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="icon-next" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </figure>
+      <section id="Projects" class="row">
+        <div class="col-md-12 featuredwork">
+          <h2 class="featuredwork__title">Featured Work</h2>
+        </div>
+      </section>
+      <section class="row">
+        <article class="col-xs-12 col-sm-12 col-md-offset-0 col-md-4 article">
+          <img class="img-responsive" src="images/cv.svg" data-toggle="modal" data-target="#project-modal-1" alt="Curriculum Vitae">
+          <h3 class="article__title">Interactive Resume</h3>
+          <h4 class="article__description">Project</h4>
+          <p class="article__content" data-toggle="modal" data-target="#project-modal-1"> Fully develop a responsive website and interactive resume application . <a>Read More...</a></p>
+          <p><a class="article__link" href="http://github.com/">Link to project</a></p>
+        </article>
+        <article class="col-xs-12 col-sm-12 col-md-offset-0 col-md-4 article">
+          <img class="img-responsive" src="images/arcadegame.svg" data-toggle="modal" data-target="#project-modal-2" alt="Arcade Game">
+          <h3 class="article__title">Class Arcade Game</h3>
+          <h4 class="article__description">Project</h4>
+          <p class="article__content" data-toggle="modal" data-target="#project-modal-2">Visual assets and a game loop engine recreating a classic arcade game Frogger. <a>Read More...</a></p>
+          <p><a class="article__link" href="http://github.com/">Link to project</a></p>
+        </article>
+        <article class="col-xs-12 col-sm-12 col-md-offset-0 col-md-4 article">
+          <img class="img-responsive" src="images/map.svg" data-toggle="modal" data-target="#project-modal-3" alt="Map">
+          <h3 class="article__title">Neighborhood Map</h3>
+          <h4 class="article__description">Project</h4>
+          <p class="article__content" data-toggle="modal" data-target="#project-modal-3">Single-page application based on a real life map featuring social interactions. <a>Read More...</a></p>
+          <p><a class="article__link" href="http://github.com/">Link to project</a></p>
+        </article>
+      </section>
+      <section class="row">
+        <div class="col-md-12"><hr></div>
+      </section>
+      <footer class="row">
+        <div class="col-md-12">
+          <h6 class="text-center footer"><em>Nuno Vieira</em> @ 2017</h6>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="project-modal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Interactive Resume</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive modal-image" src="images/cv.svg" alt="Curriculum Vitae">
+            <div class="row">
+              <div class="col-xs-8 col-xs-offset-2 modal-description">
+                <br><p>You will develop an interactive resume application that reads your resume content from a JSON file and dynamically displays that content within a provided template. You will use objects, functions, conditionals, and control structures to compose the content that will display on the resume.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="project-modal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Classic Arcade Game Clone</h4>
+          </div>
+            <div class="modal-body">
+              <img class="img-responsive modal-image" src="images/arcadegame.svg" alt="Arcade Game">
+              <div class="row">
+                <div class="col-xs-8 col-xs-offset-2 modal-description">
+                  <br><p>You will be provided with visual assets and a game loop engine; using these tools you must add a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger.</p>
+                </div>
+              </div>
+            </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="project-modal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Neighborhood Map</h4>
+          </div>
+            <div class="modal-body">
+              <img class="img-responsive modal-image" src="images/map.svg" alt="Map">
+              <div class="row">
+                <div class="col-xs-8 col-xs-offset-2 modal-description">
+                  <br><p>You will develop a single-page application featuring a map of your neighborhood or a neighborhood you would like to visit. You will then add additional functionality to this application, including: map markers to identify popular locations or places you’d like to visit, a search function to easily discover these locations, and a listview to support simple browsing of all locations. You will then research and implement third-party APIs that provide additional information about each of these locations (such as StreetView images, Wikipedia articles, Yelp reviews, etc).</p>
+                </div>
+              </div>
+            </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Drawer -->
+    <script type="text/javascript" src="js/javascript.js"></script>
+  </body>
+</html>
