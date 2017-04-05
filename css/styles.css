@@ -32,6 +32,10 @@ ul {
   margin: 0;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 /** header **/
 
 .header__title{
@@ -178,9 +182,8 @@ ul {
 }
 
 .modal-image{
-  max-width: 400px;
-  max-height: 250px;
-  width:100%
+  max-width: 500px;
+  max-height: 300px;
 }
 
 /* footer */
